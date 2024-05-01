@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sell Books</title>
+    <link rel="stylesheet" href="css/sell.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top"  style="background-color: #1C2D59;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+            <span class="sr-only">navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a><img class="logo"src="images/1.png" alt="logo"></a>
+        </div>
+      <div class="collapse navbar-collapse" id="collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <ul class="nav navbar-nav">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+            <li><a href="buybook.php"><span class="glyphicon glyphicon-modal-window"></span>Buy Book</a></li>
+            <li><a href="sell.html"><span class="glyphicon glyphicon-book"></span>Sell Book</a></li>
+             <li>  <a href="contact.php"><span class="glyphicon glyphicon-phone"></span> Contact us</a>  </li>
+          </ul>
+
+
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>Cart<span class="badge">0</span></a>
+            <div class="dropdown-menu" style="width:400px;">
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-md-3">Sl.No</div>
+                    <div class="col-md-3">Product Image</div>
+                    <div class="col-md-3">Product Name</div>
+                    <div class="col-md-3">Price in &#x20B9; ?></div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div id="cart_product">
+                  <!--<div class="row">
+                    <div class="col-md-3">Sl.No</div>
+                    <div class="col-md-3">Product Image</div>
+                    <div class="col-md-3">Product Name</div>
+                    <div class="col-md-3">Price in $.</div>
+                  </div>-->
+                  </div>
+                </div>
+                <div class="panel-footer"></div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>SignIn</a>
+            <ul class="dropdown-menu">
+              <div style="width:300px;">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">Login</div>
+                  <div class="panel-heading">
+                    <form onsubmit="return false" id="login">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" name="email" id="email" required/>
+                      <label for="email">Password</label>
+                      <input type="password" class="form-control" name="password" id="password" required/>
+                      <p><br/></p>
+                      <a href="#" style="color:white; list-style:none;">Forgotten Password</a><input type="submit" class="btn btn-success" style="float:right;">
+                    </form>
+                  </div>
+                  <div class="panel-footer" id="e_msg"></div>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <section>
+      <link rel="stylesheet" href="css/sell.css">
+
+           <div class="mainbx">
+             <h1>Sell Books</h1>
+
+        <form>
+
+             <div class="row">
+
+
+
+                  <div class="column1">
+
+                     <div class="inputbx">
+                          <span>Book Name:</span><br>
+                          <input type="text" name="bookname" id="bookname">
+                      </div>
+
+
+                      <div class="inputbx">
+                        <span>Category:</span><br>
+                        <select>
+                          <option value="" disabled selected hidden>Select a Category</option>
+                          <option value="Action and Adventure" name="actionadventure">Action and Adventure</option>
+                          <option value="Biography" name="biography">Biography</option>
+                          <option value="Comics" name="comics">Comics</option>
+                          <option value="Dictionary" name="dictionary">Dictionary</option>
+                          <option value="Drama" name="drama">Drama</option>
+                          <option value="Economics" name="economics">Economics</option>
+                          <option value="Encyclopedia" name="encyclopedia">Encyclopedia</option>
+                          <option value="Fiction" name="fiction">Fiction</option>
+                          <option value="Geography" name="geography">Geography</option>
+                          <option value="History" name="history">History</option>
+                          <option value="Horror" name="horror">Horror</option>
+                          <option value="Maths" name="maths">Maths</option>
+                          <option value="Mystery" name="mystery">Mystery</option>
+                          <option value="Political Science" name="politicalscience">Political Science</option>
+                          <option value="Romance" name="romance">Romance</option>
+                          <option value="Science" name="science">Science</option>
+                          <option value="Thriller" name="thriller">Thriller</option>
+                        </select>
+                      </div>
+
+
+
+                      <div class="inputbx">
+                        <span>Purchase Date:</span><br>
+                        <input type="date" name="purchasedate" id="purchasedate">
+                      </div>
+
+
+
+                      <div class="inputbx">
+                        <span>Price:</span><br>
+                         <input type="number" name="price" id="price">
+                      </div>
+
+
+
+         </div>
+
+
+                  <div class="ccolumn2">
+
+                                <div class="inputbx">
+                                  <span>Author Name:</span><br>
+                                    <input type="text" name="authorname" id="authorname">
+                                </div>
+
+
+                             <div class="inputbx">
+                               <span>Book Language:</span>
+                               <select name="booklang" id="booklang">
+                                 <option value="" disabled selected hidden>Select Book Language</option>
+                                 <option value="English" name="english">English</option>
+                                 <option value="Hindi" name="hindi">Hindi</option>
+                                 <option value="Sanskrit" name="sanskrit">Sanskrit</option>
+                                 <option value="Urdu" name="urdu">Urdu</option>
+                               </select>
+                             </div>
+
+
+                          <div class="inputbx">
+                            <span>Book Condition:</span>
+                            <select name="bookcondition" id="bookcondition">
+                              <option value="" disabled selected hidden>Select Book Condition</option>
+                              <option value="New" name="new">New</option>
+                              <option value="Good" name="good">Good</option>
+                              <option value="Fair" name="fair">Fair</option>
+                              <option value="Poor" name="poor">Poor</option>
+                            </select>
+                          </div>
+
+
+
+                          <div class="inputbx">
+                            <span>Choose Product Image</span>
+                            <input type="file" id="myFile" name="myFile">
+                          </div>
+
+                          <div>
+                          <input type="submit" value="Submit" class="btn">
+                          </div>
+
+
+
+
+
+                             </div>
+                        </div>
+
+       </form>
+        </div>
+</section>
+</body>
+</html>

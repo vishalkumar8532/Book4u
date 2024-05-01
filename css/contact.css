@@ -1,0 +1,104 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+
+overflow-x: hidden;
+}
+li,a{
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+
+
+#contact
+{
+	background: #efefef;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #777;
+  margin-top: 40px;
+
+}
+h1
+{
+	text-align: center;
+  font-size:40px;
+	color: #555!important;
+	padding-bottom: 10px;
+}
+
+h1::after
+{
+	content:'';
+	background: #007bff;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 10px auto 5px;
+}
+.container{
+  margin-right: 150px;
+  margin-left: 150px;
+
+}
+
+.contact-form
+{
+	padding: 10px;
+  width: 35%;
+
+
+}
+
+
+.follow
+{
+	background: #fff;
+	padding: 10px;
+	margin: 15px;
+  width: 110%;
+  border-style: outset;
+  border-radius: 10px;
+}
+
+.form-group{
+  margin: 10px;
+  width: 251%;
+
+}
+
+.row{
+display: flex;
+}
+.user-details{
+width: 50%;
+padding-left: 50px;
+
+
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  border-style: outset;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn{
+
+	background: #0E041C;
+	color: white;
+  font-size: 15px;
+  cursor: pointer;
+	padding: 0.3em 1em;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid white;
+}
